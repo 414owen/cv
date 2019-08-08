@@ -1,7 +1,7 @@
 * {
   font-family: 'PT Sans', Sans;
   box-sizing: border-box;
-  --heading-text-size: 10mm;
+  --heading-text-size: 8mm;
   --m: 5mm;
   --line-width: 2px;
   --fg: #000;
@@ -23,7 +23,7 @@ body {
 .head {
   display: flex;
   justify-content: center;
-  margin-top: 10mm;
+  margin-top: 8mm;
 }
 
 .head-rule {
@@ -60,6 +60,7 @@ h1 {
 
 .pane {
   padding: var(--m);
+  padding-top: 0;
   --ml: 12mm;
 }
 
@@ -152,4 +153,9 @@ a {
 
 .bullets > * , .info > * {
   margin-top: 2mm;
+}
+
+.year {
+  font-size: 0.8em;
+  text-align: right;
 }
