@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Owen Shepherd</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" media="print" href="print.css">
     <link rel="stylesheet" type="text/css" media="screen" href="screen.css">
@@ -22,23 +23,34 @@
       </div>
       <div class="head-rule"></div>
 
-      <div class="split">
+      <main class="split">
         <div class="pane one">
           <h2>
             Skills
           </h2>
           <div class="skills">
             <div class="name">
-              Haskell
+              <a href="https://www.haskell.org/">Haskell</a>
             </div>
             <div class="rating">
               <div class="bar"></div>
               <div class="dot">
-                <div style="left: 98%"></div>
+                <div style="left: 95%"></div>
               </div>
             </div>
+
             <div class="name">
-              C
+              <a href="https://nixos.org/nix/">Nix</a>
+            </div>
+            <div class="rating">
+              <div class="bar"></div>
+              <div class="dot">
+                <div style="left: 70%"></div>
+              </div>
+            </div>
+
+            <div class="name">
+              <a href="https://reflex-frp.org/">Reflex-FRP</a>
             </div>
             <div class="rating">
               <div class="bar"></div>
@@ -46,8 +58,40 @@
                 <div style="left: 80%"></div>
               </div>
             </div>
+
             <div class="name">
-              React
+              <a href="https://reactjs.org/">React / JS</a>
+            </div>
+            <div class="rating">
+              <div class="bar"></div>
+              <div class="dot">
+                <div style="left: 90%"></div>
+              </div>
+            </div>
+
+            <div class="name">
+              <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>
+            </div>
+            <div class="rating">
+              <div class="bar"></div>
+              <div class="dot">
+                <div style="left: 85%"></div>
+              </div>
+            </div>
+
+            <div class="name">
+              <a href="https://www.python.org/">Python</a>
+            </div>
+            <div class="rating">
+              <div class="bar"></div>
+              <div class="dot">
+                <div style="left: 80%"></div>
+              </div>
+            </div>
+
+          <!--
+            <div class="name">
+              <a href="https://reactjs.org/">React</a>
             </div>
             <div class="rating">
               <div class="bar"></div>
@@ -55,152 +99,254 @@
                 <div style="left: 93%"></div>
               </div>
             </div>
+            -->
           </div>
-          <p>
-          Rust, Elm, Redux, Interpreters, Scheme
-          </p>
+
+            <p>
+            <a href="https://www.rust-lang.org/">Rust</a>,
+            <a href="https://redux.js.org/">Redux</a>,
+            <a href="https://git-scm.com/">Git</a>
+            </p>
+
           <h2>
             Experience
           </h2>
 
           <div>
             <div class="section">
-              <a href="https://www.hubspot.com/">
-                <div class="logo">
-                  <img src="./obsidian.png" />
+              <div class="logod">
+                <a href="https://www.hubspot.com/">
+                  <div class="logo">
+                    <img src="./hubspot.svg" alt="HubSpot logo"/>
+                  </div>
+                </a>
+
+                <div>
+                  <aside class="year">
+                    May 2020 - Present
+                  </aside>
+                  <a href="https://www.hubspot.com/">
+                    <h3 class="company">
+                      HubSpot - Senior Software Engineer (Haskell)
+                    </h3>
+                  </a>
+
+                  <p>
+                    Working on the <a href="https://www.piesync.com/">Piesync</a> core platform team.
+                    Building the Dublin Haskell team from scratch.
+                  </p>
+
                 </div>
-              </a>
-
-              <aside class="year">
-                December 2019 - present
-              </aside>
-              <a href="https://www.hubspot.com/">
-                <h3 class="company">
-                  Obsidian Systems LLC - Software Engineer Contractor
-                </h3>
-              </a>
-
-              <p>
-              Using and developing full-stack frameworks in Haskell
-              for functional abstractions and strong compile-time correctness guarantees.
-              </p>
-
+              </div>
             </div>
 
             <div class="section">
-              <a href="https://www.hubspot.com/">
-                <div class="logo">
-                  <img src="./hubspot.svg" />
+
+              <div class="logod">
+                <a href="https://obsidian.systems/">
+                  <div class="logo">
+                    <img src="./obsidian.png" alt="Obsidian Systems LLC logo"/>
+                  </div>
+                </a>
+
+                <div>
+                  <aside class="year">
+                    December 2019 - April 2020
+                  </aside>
+                  <a href="https://obsidian.systems/">
+                    <h3 class="company">
+                      Obsidian Systems LLC - Consultant Software Engineer (Haskell)
+                    </h3>
+                  </a>
+
+                  <p>
+                  Using and developing full-stack open-source Haskell web frameworks for strong compile-time correctness guarantees.
+                  </p>
+
+                  <p>
+                    <a href="https://www.haskell.org/">Haskell</a>, <a href="https://nixos.org/nix/">Nix</a>
+                  </p>
+
                 </div>
-              </a>
-
-              <aside class="year">
-                May 2018 - December 2019
-              </aside>
-              <a href="https://www.hubspot.com/">
-                <h3 class="company">
-                  HubSpot - Fullstack Software Engineer
-                </h3>
-              </a>
-
-              <p>
-              Worked on the feedback  and advocacy team.
-              A product I built is used several million times a day.
-              </p>
-
-              <p>
-              Improved software architecture to reduce time-to-market of new features, by massively decreasing the complexity of our project.
-              </p>
-
-              <p>
-              React.js, Redux, Ramda, Immutable.js, Java
-              </p>
-
+              </div>
             </div>
 
             <div class="section">
-              <a href="https://www.arista.com/en/">
-                <div class="logo">
-                  <img src="./arista.svg" />
+
+              <div class="logod">
+                <a href="https://www.hubspot.com/">
+                  <div class="logo">
+                    <img src="./hubspot.svg" alt="HubSpot logo" />
+                  </div>
+                </a>
+
+                <div>
+                  <aside class="year">
+                    May 2018 - December 2019
+                  </aside>
+                  <a href="https://www.hubspot.com/">
+                    <h3 class="company">
+                      HubSpot - Fullstack Software Engineer
+                    </h3>
+                  </a>
+
+                  <p>
+                  Built the online survey tool frontend, which is used several million times per day, and worked on various feedback and advocacy tools.
+                  </p>
+
+                  <p>
+                  Improved software architecture to reduce time-to-market of new features, by massively decreasing the complexity of our project.
+                  </p>
+
+                  <p>
+                  <a href="https://reactjs.org/">React.js</a>, <a href="https://redux.js.org/">Redux</a>, <a href="https://ramdajs.com/">Ramda</a>, <a href="https://immutable-js.github.io/immutable-js/">Immutable.js</a>, <a href="https://www.java.com/en/download/">Java</a>, <a href="https://www.mysql.com/">MySQL</a>
+                  </p>
+
                 </div>
-              </a>
-
-              <aside class="year">
-                May 2017 - Sept 2017
-              </aside>
-              <a href="https://www.arista.com/en/">
-                <h3 class="company">
-                  Arista Networks - Software Engineering Intern
-                </h3>
-              </a>
-
-              <p>
-              Wrote linux kernel modules to take advantage of specialised
-              hardware features in our network switches.
-              </p>
-
-
-              <p>
-
-              Used C for the kernel modules, took advandage of the modules from
-              userspace C++, wrote tests in python
-
-              </p>
-
+              </div>
             </div>
 
             <div class="section">
-              <a href="https://www.workday.com/">
-                <div class="logo">
-                  <img src="./workday.svg" />
+
+              <div class="logod">
+                <a href="https://www.arista.com/en/">
+                  <div class="logo">
+                    <img src="./arista.svg" alt="Arista Networks logo"/>
+                  </div>
+                </a>
+
+                <div>
+                  <aside class="year">
+                    May 2017 - Sept 2017
+                  </aside>
+                  <a href="https://www.arista.com/en/">
+                    <h3 class="company">
+                      Arista Networks - Software Engineering Intern
+                    </h3>
+                  </a>
+
+                  <p>
+                  Wrote linux kernel modules to take advantage of specialised
+                  hardware features in our network switches.
+                  </p>
+
+                  <p>
+                  <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a> kernel modules, <a href="https://isocpp.org/">C++</a> userspace, <a href="https://www.python.org/">Python</a> tests
+                  </p>
                 </div>
-              </a>
-
-              <aside class="year">
-                May 2016 - Sept 2016
-              </aside>
-              <a href="https://www.workday.com/">
-                <h3 class="company">
-                  Workday - Software Engineering Intern
-                </h3>
-              </a>
-
-              <p>
-
-              Wrote an app that used wifi network signal strengths to
-              triangulate a user's location in the office.
-
-              </p>
-
-              <p>
-
-              Scala, Cordova, Ionic
-
-              </p>
-
+              </div>
             </div>
+
+            <div class="section">
+
+              <div class="logod">
+                <a href="https://www.workday.com/">
+                  <div class="logo">
+                    <img src="./workday.svg" alt="Workday Logo"/>
+                  </div>
+                </a>
+
+                <div>
+                  <aside class="year">
+                    May 2016 - Sept 2016
+                  </aside>
+                  <a href="https://www.workday.com/">
+                    <h3 class="company">
+                      Workday - Software Engineering Intern
+                    </h3>
+                  </a>
+
+                  <p>
+                  Wrote a cross-platform app that used wifi network signal strengths to
+                  triangulate a user's location in the office.
+                  </p>
+
+                  <p>
+
+                  <a href="https://www.scala-lang.org/">Scala</a>, <a href="https://cordova.apache.org/">Cordova</a>, <a href="https://ionicframework.com/">Ionic</a>
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+            <!--
+            <div class="section">
+
+              <div class="logod">
+                <a href="https://betterexaminations.ie/">
+                  <div class="logo">
+                    <img src="./workday.svg" alt="Workday Logo"/>
+                  </div>
+                </a>
+
+                <div>
+                  <aside class="year">
+                    May 2016 - Sept 2016
+                  </aside>
+                  <a href="https://betterexaminations.ie/">
+                    <h3 class="company">
+                      BetterExaminations - Software Developer
+                    </h3>
+                  </a>
+
+                  <p>
+                  Wrote a cross-platform app that used wifi network signal strengths to
+                  triangulate a user's location in the office.
+                  </p>
+
+                  <p>
+
+                  <a href="https://www.scala-lang.org/">Scala</a>, <a href="https://cordova.apache.org/">Cordova</a>, <a href="https://ionicframework.com/">Ionic</a>
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            -->
+
+            <!--
+            <div class="section bullets">
+              <div><h3>
+                &#8226; <a href="https://betterexaminations.ie/">BetterExaminations.ie</a>
+                - Software Developer
+              </h3></div>
+              <div><h3>
+                &#8226; <a href="https://www.workday.com/">Workday</a>
+                - Software Engineering Intern
+              </h3></div>
+            </div>
+            -->
           </div>
         </div>
         <div class="pane two">
+
           <h2> Education </h2>
           <div>
             <div class="section">
-              <a href="https://www.tcd.ie/">
-                <div class="logo">
-                  <img src="./trinity.svg">
+
+              <div class="logod">
+                <a href="https://www.tcd.ie/">
+                  <div class="logo">
+                    <img src="./trinity.svg" alt="Trinity College Dublin logo"/>
+                  </div>
+                </a>
+
+                <div>
+                  <a href="https://www.tcd.ie/">
+                    <h3>
+                      Trinity College Dublin
+                    </h3>
+                  </a>
+
+                  <p>
+                  Bachelor's degree in Computer Science.
+                  </p>
                 </div>
-              </a>
 
-              <a href="https://www.tcd.ie/">
-                <h3>
-                  Trinity College Dublin
-                </h3>
-              </a>
-
-              <p>
-              Bachelor's degree in Computer Science
-              </p>
-
+              </div>
             </div>
           </div>
           <h2>
@@ -208,43 +354,110 @@
           </h2>
           <div>
             <div class="section">
-              <a href="https://github.com/414owen/Phage">
-                <div class="logo">
-                  <img src="https://owen.cafe/phage-anim.b1dc52bb.svg">
+
+              <div class="logod">
+                <a href="https://github.com/414owen/Phage">
+                  <div class="logo">
+                    <img src="https://owen.cafe/phage-anim.b1dc52bb.svg" alt="Phage logo" />
+                  </div>
+                </a>
+
+                <div>
+                  <a href="https://github.com/414owen/Phage">
+                    <h3>
+                      The Phage Programming Language
+                    </h3>
+                  </a>
+
+                  <p>
+
+                  A functional, homoiconic, expressive, metaprogrammable programming language.
+
+                  </p>
+
                 </div>
-              </a>
-
-              <a href="https://github.com/414owen/Phage">
-                <h3>
-                  The Phage Programming Language
-                </h3>
-              </a>
-
-              <p>
-
-              A functional, homoiconic, expressive, metaprogrammable programming language.
-
-              </p>
+              </div>
             </div>
 
             <div class="section">
-              <a href="https://owen.cafe/try-lambda/">
-                <div class="logo">
-                  <img src="https://owen.cafe/lambda-anim.2029e609.svg">
+
+              <div class="logod">
+                <a href="https://lambda.how/">
+                  <div class="logo">
+                    <img src="https://owen.cafe/img/lambda.svg" alt="Lambda REPL logo" />
+                  </div>
+                </a>
+
+                <div>
+                  <a href="https://lambda.how/">
+                    <h3>
+                      Try Lambda
+                    </h3>
+                  </a>
+
+                  <p>
+
+                  Lambda calculus step-by-step simplifier REPL.
+
+                  </p>
+
                 </div>
-              </a>
+              </div>
+            </div>
 
-              <a href="https://owen.cafe/try-lambda/">
-                <h3>
-                  Try Lambda
-                </h3>
-              </a>
+            <div class="section">
 
-              <p>
+              <div class="logod">
+                <a href="https://select.pink/">
+                  <div class="logo">
+                    <svg viewBox="0 0 10 10" alt="Lambda REPL logo">
+                      <rect x="2" y="2" width="6" height="6" fill="#f8a"/>
+                    </svg>
+                  </div>
+                </a>
 
-              Online lambda calculus step-by-step simplifier REPL
+                <div>
+                  <a href="https://select.pink/">
+                    <h3>
+                      Select.Pink
+                    </h3>
+                  </a>
 
-              </p>
+                  <p>
+
+                  A game where you use CSS selectors to make progress.
+
+                  </p>
+
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="section">
+
+              <div class="logod">
+                <a href="https://select.pink/">
+                  <div class="logo">
+                    <img src="./hexplode-anim.svg" alt="Hexplode logo"/>
+                  </div>
+                </a>
+
+                <div>
+                  <a href="https://select.pink/">
+                    <h3>
+                      Hexplode
+                    </h3>
+                  </a>
+
+                  <p>
+                  A clone of J. Ansell's 1982 BBC Micro game.
+
+                  </p>
+
+                </div>
+              </div>
 
             </div>
 
@@ -256,10 +469,10 @@
             </div>
           </div>
           <h2> Competitions </h2>
-          <div>
-            <div class="section">
+
+            <div class="logod">
               <div class="logo">
-                <img src="./icpc.svg">
+                <img src="./icpc.svg" alt="ICPC logo" />
               </div>
 
               <div class="bullets">
@@ -295,30 +508,42 @@
                 </div>
               </div>
 
-              <div>
-                <h2>About Me &amp; Contact</h2>
-                <div class="info">
+            </div>
+
+            <div>
+              <h2>About Me &amp; Contact</h2>
+              <div class="info">
+                <div>
                   name: Owen Shepherd
-                  <div>
-                    languages: English, French
-                  </div>
-                  <div>
-                    nationalities: British, Australian
-                  </div>
-                  <div>
-                    email: <a href="mailto:owen@owen.cafe">owen@owen.cafe</a>
-                  </div>
-                  <div>
-                    phone: <a href="tel:+353852328475">+353 85 232 8475</a>
-                  </div>
+                </div>
+                <div>
+                  languages: English, French
+                </div>
+                <div>
+                  nationalities: United Kingdom, Australian
+                </div>
+                <div>
+                  web: <a href="https://owen.cafe/">owen.cafe</a>
+                </div>
+                <div>
+                  email: <a href="mailto:owen@owen.cafe">owen@owen.cafe</a>
+                </div>
+                <div>
+                  phone: <a href="tel:+353852328475">+353 85 232 8475</a>
                 </div>
               </div>
-
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </body>
+        </main>
 
+        <!--
+        <footer>
+          <a href="mailto:owen@owen.cafe">&#128231;</a>
+          <a href="https://owen.cafe/">&#127760;</a>
+          <a href="mailto:owen@owen.cafe">&#128231;</a>
+        </footer>
+        -->
+
+      </div>
+  </body>
 </html>

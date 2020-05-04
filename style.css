@@ -17,7 +17,12 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  font-size: 14px;
+  font-size: 3mm;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
 }
 
 .head {
@@ -44,6 +49,7 @@ body {
   display: inline-block;
   background-color: var(--fg);
   color: var(--bg);
+  z-index: 100;
 }
 
 h1 {
@@ -61,7 +67,7 @@ h1 {
 .pane {
   padding: var(--m);
   padding-top: 0;
-  --ml: 12mm;
+  --ml: 8mm;
 }
 
 .pane.one {
@@ -101,7 +107,7 @@ h3 {
 }
 
 .rating > .dot {
-  --r: 16px;
+  --r: 4mm;
   width: calc(100% - var(--r));
   position: relative;
 }
@@ -121,8 +127,13 @@ h3 {
 }
 
 .section {
-  overflow: auto;
+  overflow: hidden;
   margin-bottom: var(--m);
+}
+
+.logod {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -130,14 +141,15 @@ h3 {
   --s: 16mm;
   width: var(--s);
   height: var(--s);
-  margin: 0 var(--ml) var(--ml) 0;
+  margin: 0;
+  margin-right: var(--m);
   float: left;
   display: flex;
   align-items: center;
   justify-content: middle;
 }
 
-.logo > img {
+.logo > img, .logo > svg {
   width: var(--s);
   max-height: var(--s);
 }
@@ -151,11 +163,25 @@ a {
   color: var(--fg);
 }
 
-.bullets > * , .info > * {
+.bullets > *:not(:first-child) , .info > *:not(:first-child), p:not(:first-child) {
   margin-top: 2mm;
+  margin-bottom: 0;
 }
 
 .year {
   font-size: 0.8em;
+  margin-bottom: 1.5mm;
   text-align: right;
+}
+
+footer {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+footer > :not(:first-child) {
+  margin-left: 3mm;
 }
