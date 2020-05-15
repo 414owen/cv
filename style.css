@@ -2,12 +2,15 @@
   font-family: 'PT Sans', Sans;
   box-sizing: border-box;
   --heading-text-size: 8mm;
+  --ml: 8mm;
   --m: 4.5mm;
   --line-width: 2px;
   --fg: #000;
   --bg: #f6f6f6;
   --l1: #888;
   --l2: #ddd;
+
+ --ml: 8mm;
   /* 
    text-transform: uppercase;
   */
@@ -28,7 +31,7 @@ body {
 .head {
   display: flex;
   justify-content: center;
-  margin-top: 8mm;
+  margin-top: var(--ml);
 }
 
 .head-rule {
@@ -67,7 +70,10 @@ h1 {
 .pane {
   padding: var(--m);
   padding-top: 0;
-  --ml: 8mm;
+}
+
+.pane > :first-child {
+  margin-top: var(--ml);
 }
 
 .pane.one {
@@ -84,7 +90,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.1em;
+  line-height: 1.4em;
   display: inline;
   margin: 0;
   padding: 0;
