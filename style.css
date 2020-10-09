@@ -48,6 +48,11 @@ body {
   margin-bottom: calc(0px - var(--marg) - var(--h));
 }
 
+.tagline {
+  margin-top: calc(var(--m) / 2);
+  text-align: center;
+}
+
 .heading {
   display: inline-block;
   background-color: var(--fg);
@@ -74,9 +79,11 @@ h1 {
   padding-top: 0;
 }
 
+/*
 .pane > :first-child {
   margin-top: var(--ml);
 }
+*/
 
 .pane.one {
   margin-left: var(--ml);
