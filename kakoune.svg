@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <linearGradient id="a" x1="-110" x2="10" y1="-110" y2="10" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#ffa" offset="0"/>
+  <stop stop-color="#cc8" offset=".75"/>
+  <stop stop-color="#8b6" offset="1"/>
+ </linearGradient>
+ <linearGradient id="b" x1="-10" x2="110" y1="-110" y2="10" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#ac7" offset="0"/>
+  <stop stop-color="#896" offset=".6"/>
+  <stop stop-color="#685" offset="1"/>
+ </linearGradient>
+ <linearGradient id="c" x1="-110" x2="10" y1="-10" y2="110" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#8a7" offset="0"/>
+  <stop stop-color="#ba5" offset=".5"/>
+  <stop stop-color="#226a3a" offset="1"/>
+ </linearGradient>
+ <linearGradient id="d" x1="-10" x2="110" y1="-10" y2="110" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#798" offset="0"/>
+  <stop stop-color="#586" offset=".15"/>
+  <stop stop-color="#232" offset="1"/>
+ </linearGradient>
+ <linearGradient id="e" x1="-6.7466" x2="46.221" y1="-4.0127" y2="84.267" gradientTransform="scale(1.1146 .89715)" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#3c5082" offset="0"/>
+  <stop stop-color="#145082" offset=".4"/>
+  <stop stop-color="#14738c" offset=".8"/>
+  <stop stop-color="#327896" offset="1"/>
+ </linearGradient>
+ <linearGradient id="f" x1="-31.551" x2="75.07" y1="44.119" y2="-62.502" gradientTransform="scale(.91915 1.088)" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#c84b41" offset="0"/>
+  <stop stop-color="#fa644d" offset=".5"/>
+  <stop stop-color="#fa9661" offset="1"/>
+ </linearGradient>
+ <linearGradient id="g" x1="-82.222" x2="-74.226" y1="-39.118" y2="40.844" gradientTransform="scale(.57527 1.7383)" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#ff8264" offset="0"/>
+  <stop stop-color="#eb5a41" offset=".2"/>
+  <stop stop-color="#dc5f46" offset=".5"/>
+  <stop stop-color="#c84b37" offset=".8"/>
+  <stop stop-color="#dc5f4b" offset="1"/>
+ </linearGradient>
+ <filter id="h">
+  <feOffset dx="2" dy="3" in="SourceGraphic" result="offOut"/>
+  <feColorMatrix in="offOut" result="matrixOut" values="0.3 0 0 0 0 0 0.3 0 0 0 0 0 0.3 0 0 0 0 0 0.1 0"/>
+  <feGaussianBlur in="matrixOut" result="blurOut" stdDeviation="4"/>
+  <feBlend in="SourceGraphic" in2="blurOut"/>
+ </filter>
+ <filter id="i">
+  <feOffset dx="2" dy="3" in="SourceGraphic" result="offOut"/>
+  <feColorMatrix in="offOut" result="matrixOut" values="0.0 0 0 0 0 0 0.0 0 0 0 0 0 0.0 0 0 0 0 0 0.3 0"/>
+  <feGaussianBlur in="matrixOut" result="blurOut" stdDeviation="4"/>
+  <feBlend in="SourceGraphic" in2="blurOut"/>
+ </filter>
+ <filter id="j">
+  <feOffset dx="4" dy="4" in="SourceGraphic" result="offOut"/>
+  <feColorMatrix in="offOut" result="matrixOut" values="0.1 0 0 0 0 0 0.1 0 0 0 0 0 0.1 0 0 0 0 0 0.25 0"/>
+  <feGaussianBlur in="matrixOut" result="blurOut" stdDeviation="6"/>
+  <feBlend in="SourceGraphic" in2="blurOut"/>
+ </filter>
+ <g transform="translate(110,110)">
+  <path d="m0-100 100 100h-100z" fill="url(#b)" filter="url(#h)"/>
+  <path d="m0-100-100 100h100z" fill="url(#a)" filter="url(#h)"/>
+  <path d="M 0,100 100,0 H 0 Z" fill="url(#d)" filter="url(#h)"/>
+  <path d="m0 100-100-100h100z" fill="url(#c)" filter="url(#h)"/>
+  <g transform="translate(6)">
+   <path d="m63 69h-44l-38-35 28-31z" fill="url(#e)" filter="url(#i)"/>
+   <g filter="url(#j)">
+    <path d="m69-68h-39l-56 58-3 58z" fill="url(#f)"/>
+    <path d="m-68-68v139h38l8-139z" fill="url(#g)"/>
+   </g>
+  </g>
+ </g>
+</svg>

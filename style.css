@@ -60,6 +60,8 @@ h1 {
   padding: 0;
   font-size: var(--heading-text-size);
   line-height: var(--heading-text-size);
+  font-family: 'Red Hat Display', Overlock, 'Yeseva One', Palanquin, Viga, 'Monoton', 'Poiret One', sans;
+  font-weight: 500;
 }
 
 .split {
