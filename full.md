@@ -46,3 +46,4 @@
 
 * [Basic Modeling for Discrete Optimization](https://www.coursera.org/learn/basic-modeling)
 * [Fundamentals of Quantitative Modeling](https://www.coursera.org/learn/wharton-quantitative-modeling)
+* [ScyllaDB University](https://university.scylladb.com)
