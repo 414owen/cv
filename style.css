@@ -1,5 +1,6 @@
 * {
-  font-family: 'PT Sans', Sans;
+  font-family: 'Inconsolata', Sans;
+  line-height: 1.12em;
   box-sizing: border-box;
   --heading-text-size: 8mm;
   --ml: 8mm;
@@ -29,9 +30,13 @@ body {
 }
 
 .head {
+  margin-top: var(--ml);
+  /*
+  margin-left: var(--ml);
+  padding-left: var(--m);
+  */
   display: flex;
   justify-content: center;
-  margin-top: var(--ml);
 }
 
 .head-rule {
@@ -186,7 +191,7 @@ a {
 
 .year {
   font-size: 0.8em;
-  margin-bottom: 1.5mm;
+  margin-bottom: 0.5mm;
   text-align: right;
 }
 
