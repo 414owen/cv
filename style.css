@@ -3,7 +3,7 @@
   line-height: 1.12em;
   box-sizing: border-box;
   --heading-text-size: 8mm;
-  --ml: 8mm;
+  --ml: 6mm;
   --m: 4.5mm;
   --line-width: 2px;
   --fg: #000;
@@ -11,7 +11,6 @@
   --l1: #888;
   --l2: #ddd;
 
- --ml: 8mm;
   /*
    text-transform: uppercase;
   */
@@ -39,20 +38,6 @@ body {
   justify-content: center;
 }
 
-.head-rule {
-  --h: var(--line-width);
-  background-color: var(--fg);
-  height: var(--h);
-  --marg: calc(
-    0px
-    - var(--h) / 2
-    - var(--heading-text-size) / 2
-    - var(--m)
-  );
-  margin-top: var(--marg);
-  margin-bottom: calc(0px - var(--marg) - var(--h));
-}
-
 .tagline {
   margin-top: calc(var(--m) / 2);
   text-align: center;
@@ -66,11 +51,11 @@ body {
 }
 
 h1 {
-  margin: var(--m);
+  margin: 4mm;
   padding: 0;
   font-size: var(--heading-text-size);
   line-height: var(--heading-text-size);
-  font-family: 'Red Hat Display', Overlock, 'Yeseva One', Palanquin, Viga, 'Monoton', 'Poiret One', sans;
+  font-family: 'Nova Mono', 'Red Hat Display', Overlock, 'Yeseva One', Palanquin, Viga, 'Monoton', 'Poiret One', sans;
   font-weight: 500;
 }
 
