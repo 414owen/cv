@@ -157,9 +157,13 @@ h3 {
   align-items: center;
 }
 
+i[class|="devicon"] {
+  /* font-size: 1.2em; */
+}
+
 .logo {
   --ml: var(--m);
-  --s: 16mm;
+  --s: 12mm;
   width: var(--s);
   height: var(--s);
   margin: 0;
