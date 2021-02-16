@@ -3,8 +3,8 @@
   line-height: 1.12em;
   box-sizing: border-box;
   --heading-text-size: 8mm;
-  --ml: 6mm;
-  --m: 4.5mm;
+  --m: 5mm;
+  --ml: var(--m);
   --line-width: 2px;
   --fg: #000;
   --bg: #f6f6f6;
@@ -28,8 +28,11 @@ body {
   flex-direction: column;
 }
 
+h2:first-child {
+  margin-top: 0;
+}
+
 .head {
-  margin-top: var(--ml);
   /*
   margin-left: var(--ml);
   padding-left: var(--m);
@@ -49,7 +52,7 @@ body {
 }
 
 h1 {
-  margin: 1mm;
+  margin: calc(var(--m) * 2);
   padding: 0;
   font-size: var(--heading-text-size);
   line-height: var(--heading-text-size);
@@ -64,8 +67,7 @@ h1 {
 }
 
 .pane {
-  padding: var(--m);
-  padding-top: 0;
+  padding: 0 var(--m);
 }
 
 /*
@@ -84,7 +86,7 @@ h1 {
 
 h2 {
   border-bottom: var(--line-width) solid var(--l1);
-  margin: var(--m) 0;
+  margin: var(--m) 0 calc(var(--m) / 2) 0;
 }
 
 h3 {
