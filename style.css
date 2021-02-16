@@ -174,7 +174,7 @@ a {
   color: var(--fg);
 }
 
-.bullets > *:not(:first-child) , .info > *:not(:first-child), p:not(:first-child) {
+.bullets > *:not(:first-child), p:not(:first-child) {
   margin-top: 2mm;
   margin-bottom: 0;
 }
