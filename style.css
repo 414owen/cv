@@ -17,6 +17,16 @@
   */
 }
 
+#personal-info {
+  display: grid;
+  grid-template-columns: auto 100fr;
+  grid-column-gap: var(--m2);
+}
+
+#personal-info > span {
+  text-align: center;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -176,6 +186,7 @@ a {
 
 ul {
   margin: 0;
+  padding-left: 4mm;
 }
 
 .bullets > *:not(:first-child), p:not(:first-child) {

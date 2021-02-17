@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'devicon';
   src:
-    url('fonts/devicon.ttf?ffa7hl') format('truetype'),
-    url('fonts/devicon.woff?ffa7hl') format('woff'),
-    url('fonts/devicon.svg?ffa7hl#devicon') format('svg');
+    url('fonts/devicon.ttf?r2luy4') format('truetype'),
+    url('fonts/devicon.woff?r2luy4') format('woff'),
+    url('fonts/devicon.svg?r2luy4#devicon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -18,14 +18,33 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.devicon-passport:before {
+  content: "\e96c";
+}
+.devicon-language:before {
+  content: "\e96d";
+}
 .devicon-reflex:before {
   content: "\e969";
+}
+.devicon-email:before {
+  content: "\e96a";
 }
 .devicon-scylla-dark:before {
   content: "\e967";
@@ -779,4 +798,10 @@
 }
 .devicon-zend-plain:before {
   content: "\ec04";
+}
+.devicon-phone:before {
+  content: "\e96b";
+}
+.devicon-sphere:before {
+  content: "\e9c9";
 }
