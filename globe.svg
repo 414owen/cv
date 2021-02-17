@@ -1,0 +1,13 @@
+<svg width="398.66" height="398.66" fill="none" stroke="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <circle cx="199.33" cy="199.33" r="193.21" fill="none" stroke-width="12.249"/>
+  <g stroke-width="10">
+   <path d="m214.33 390.33a250 250 0 0 0 0-382"/>
+   <path d="m184.33 8.3316a250 250 0 0 0 0 382"/>
+   <path d="m350.33 318.92a260 260 0 0 0-302 0"/>
+   <path d="m48.332 78.922a260 260 0 0 0 302 0"/>
+   <path d="m394.33 198.92h-390"/>
+   <path d="m199.33 4.3316v390"/>
+  </g>
+ </g>
+</svg>

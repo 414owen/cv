@@ -130,12 +130,12 @@ h3 {
 
 .section:not(:first-child) {
   border-top: var(--line-width) solid var(--l2);
-  padding-top: var(--m);
+  padding-top: calc(var(--m) / 2);
+  margin-top: calc(var(--m) / 2);
 }
 
 .section {
   overflow: hidden;
-  margin-bottom: var(--m);
 }
 
 .logod {
@@ -179,7 +179,7 @@ ul {
 }
 
 .bullets > *:not(:first-child), p:not(:first-child) {
-  margin-top: 2mm;
+  margin-top: calc(var(--m) / 2);
   margin-bottom: 0;
 }
 
