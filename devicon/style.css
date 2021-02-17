@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'devicon';
   src:
-    url('fonts/devicon.ttf?gb44sg') format('truetype'),
-    url('fonts/devicon.woff?gb44sg') format('woff'),
-    url('fonts/devicon.svg?gb44sg#devicon') format('svg');
+    url('fonts/devicon.ttf?ffa7hl') format('truetype'),
+    url('fonts/devicon.woff?ffa7hl') format('woff'),
+    url('fonts/devicon.svg?ffa7hl#devicon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,19 +24,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.devicon-reflex .path1:before {
+.devicon-reflex:before {
   content: "\e969";
-  color: rgb(0, 0, 0);
-}
-.devicon-reflex .path2:before {
-  content: "\e96a";
-  margin-left: -0.9619140625em;
-  color: rgb(0, 0, 0);
-}
-.devicon-reflex .path3:before {
-  content: "\e96b";
-  margin-left: -0.9619140625em;
-  color: rgb(0, 0, 0);
 }
 .devicon-scylla-dark:before {
   content: "\e967";
