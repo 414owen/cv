@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'devicon';
   src:
-    url('fonts/devicon.ttf?r2luy4') format('truetype'),
-    url('fonts/devicon.woff?r2luy4') format('woff'),
-    url('fonts/devicon.svg?r2luy4#devicon') format('svg');
+    url('fonts/devicon.ttf?2ga58z') format('truetype'),
+    url('fonts/devicon.woff?2ga58z') format('woff'),
+    url('fonts/devicon.svg?2ga58z#devicon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,6 +34,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.devicon-cordova:before {
+  content: "\e96f";
+}
+.devicon-dlang:before {
+  content: "\e96e";
+}
 .devicon-passport:before {
   content: "\e96c";
 }
