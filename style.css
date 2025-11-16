@@ -1,3 +1,8 @@
+code {
+  font-size: 1em;
+  color: #a22;
+}
+
 * {
   font-family: 'Inconsolata', Sans;
   line-height: 1.12em;
@@ -11,10 +16,6 @@
   --bg: #f6f6f6;
   --l1: #888;
   --l2: #ddd;
-
-  /*
-   text-transform: uppercase;
-  */
 }
 
 #personal-info {
@@ -27,39 +28,21 @@
   text-align: center;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  font-size: 3mm;
-}
-
-.page {
-  display: flex;
-  flex-direction: column;
-}
-
 h2:first-child {
   margin-top: 0;
 }
 
 .head {
-  /*
-  margin-left: var(--ml);
-  padding-left: var(--m);
-  */
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+.head > * {
+  display: inline-block;
 }
 
 .tagline {
   margin-top: calc(var(--m) / 2);
   text-align: center;
-}
-
-.heading {
-  display: inline-block;
-  z-index: 100;
 }
 
 h1 {
@@ -74,25 +57,15 @@ h1 {
 
 .split {
   display: grid;
-  grid-template-columns: 50fr 50fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .pane {
+  padding-left: var(--m);
+}
+
+main {
   padding: 0 var(--m);
-}
-
-/*
-.pane > :first-child {
-  margin-top: var(--ml);
-}
-*/
-
-.pane.one {
-  margin-left: var(--ml);
-}
-
-.pane.two {
-  margin-right: var(--ml);
 }
 
 h2 {
@@ -104,7 +77,10 @@ h3 {
   font-size: 1.1em;
   line-height: 1.4em;
   display: inline;
-  margin: 0;
+}
+
+h3, h4 {
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -151,10 +127,6 @@ h3 {
 .logod {
   display: flex;
   align-items: center;
-}
-
-i[class|="devicon"] {
-  /* font-size: 1.2em; */
 }
 
 .logo {
