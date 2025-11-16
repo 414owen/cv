@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Owen Shepherd</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
     <style>@page { size: A4 }</style>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans&family=Red+Hat+Display:wght@500">
@@ -12,51 +11,75 @@
     <link rel="stylesheet" href="./devicon/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=PT+Mono&display=swap" rel="stylesheet">
   </head>
-
   <body class="A4">
-    <section class="sheet padding-10mm">
-    <div class="head">
-      <h1>Owen Shepherd</h1>
-    </div>
-
     <main>
-
-      <h2>About Me &amp; Contact</h2>
-      <div class="logod">
-        <div class="logo">
-          <img src="./owen.png" alt="Obsidian Systems LLC logo"/>
+      <section class="sheet padding-10mm">
+        <div class="head">
+          <h1>Owen Shepherd</h1>
         </div>
-        <div class="info" id="personal-info">
-          <span class="devicon-language" title="Languages"></span>
-          <div>
-            English, French
+        <h2>About</h2>
+        <div class="logod">
+          <div class="logo">
+            <img src="./owen.png" alt="Headshot"/>
           </div>
-          <span class="devicon-passport" title="Nationalities"></span>
-          <div>
-            United Kingdom, Australia, Ireland
-          </div>
-          <span class="devicon-sphere" title="Website"></span>
-          <div>
-            <a href="https://owen.cafe/">owen.cafe</a>
-          </div>
-          <span class="devicon-email" title="Email"></span>
-          <div>
-            <a href="mailto:owen@owen.cafe">owen@owen.cafe</a>
-          </div>
-          <span class="devicon-phone" title="Phone"></span>
-          <div>
-            <a href="tel:+353852328475">+353 85 232 8475</a>
+          <div class="info" id="personal-info">
+            <div class="about">
+              Expert compiler & high-performance systems engineer.<br>
+              Experienced technical leader.
+            </div>
+            <div class="split">
+              <div class="pane">
+                <span class="devicon-language" title="Languages"></span><br>
+                <span class="devicon-passport" title="Nationalities"></span>
+              </div>
+              <div class="pane">
+                <div>
+                  <span>
+                  English, French
+                  </span>
+                </div>
+                <div>
+                  <span>
+                  UK, Aus, Ire
+                  </span>
+                </div>
+              </div>
+              <div class="pane">
+                <span class="devicon-email" title="Email"></span><br>
+                <span class="devicon-phone" title="Phone"></span>
+              </div>
+              <div class="pane">
+                <div>
+                  <span>
+                  <a href="mailto:owen@owen.cafe">owen@owen.cafe</a>
+                  </span>
+                </div>
+                <div>
+                  <span>
+                  <a href="tel:+353852328475">+353 85 232 8475</a>
+                  </span>
+                </div>
+              </div>
+              <div class="pane">
+                <span class="devicon-sphere" title="Website"></span><br>
+              </div>
+              <div class="pane">
+                <div>
+                  <span>
+                  <a href="https://owen.cafe/">owen.cafe</a>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <h2>Experience</h2>
-      <div>
-        <div class="section">
+        <h2>Experience</h2>
+        <div>
           <div class="logod">
-            <a href="https://dottxt-ai/">
-              <div class="logo" stye='background-image: url("./dottxt.svg");'>
-                <img src="./dottxt.svg" alt="dottxt"/>
+            <a href="https://dottxt.ai/">
+              <div class="logo">
+                <img src="./dottxt.svg" alt="dottxt">
               </div>
             </a>
             <div>
@@ -64,28 +87,22 @@
                 September 2024 - present
               </aside>
               <a href="https://tiko.energy/">
-
                 <h3 class="company">
-                  .txt - Staff Compiler Research Engineer & Technical Lead
+                  .txt - Staff Compiler Research Engineer<br>.txt - Technical Lead
                 </h3>
               </a>
-
               <h4>Regex engine</h4>
               <p>
-                Implemented our in-house regex engine from scratch.
-                This supports non-mainstream features, such as complement, and intersection,
-                and compiles regex exponentially faster than the rust
-                <a href="https://docs.rs/regex/latest/regex/"><code>regex</code></a> crate.
+                Implemented our in-house, industrial-strength regex engine from scratch.
+                This supports non-mainstream features, such as complement, intersection,
+                `multiple-of`, and compiles regex exponentially faster than the rust
+                <a href="https://docs.rs/regex/latest/regex/">regex</a> crate.
               </p>
               <p>
-                As an example, the <a href="https://docs.rs/regex/latest/regex/"><code>regex</code></a> crate
+                As an example, the <a href="https://docs.rs/regex/latest/regex/">regex</a> crate
                 compiles <code>(a|b)*a(a|b){14}</code>
                 to a minimal DFA in <b>43s</b>, and the library I developed compiles it in <b>26ms</b>, so <b>1653x faster</b>.
               </p>
-              <p>
-                This regex engine is a key reason we're competitive in terms of Time To First Token.
-              </p>
-
               <h4>Pangram - A universal grammar converter</h4>
               <p>
                 Implemented our universal grammar conversion tool, which is a micropass transpiler,
@@ -132,7 +149,7 @@
                 <div class="pane">
                   <ul>
                     <li>Railroad Diagrams</li>
-                    <li>Our in-house parser generator</li>
+                    <li>LALR(1) Parser</li>
                   </ul>
                 </div>
               </div>
@@ -160,20 +177,19 @@
                   </ul>
                 </div>
               </div>
-
               <h4>JSON Schema support</h4>
               <p>
-                To support JSON Schemas, we convert said schemas to grammars.
-                This is a non-trivial task (in fact, it's an ongoing area of academic research),
+                We convert JSON schemas to grammars.
+                This is non-trivial (in fact, it's an ongoing area of academic research),
                 because modern JSON schemas are sets of constraints, which all interact with each other
                 in different, and sometimes surprising, ways.
-                Solving this means doing a lot of constraint propagation.
+                Solving this requires constraint propagation.
                 I ended up writing two separate IRs to represent JSON Schemas specifically,
                 as well as four transformation passes, before spitting out an EBNF-IR
                 (the middle-end IR of Pangram, above).
               </p>
               <p>
-                I spearheaded this work, leading a small but extremely capable team of compiler
+                I spearheaded this work, leading a small team of capable compiler
                 engineers.
               </p>
               <p>
@@ -182,10 +198,8 @@
             </div>
           </div>
         </div>
-
       </section>
       <section class="sheet padding-10mm">
-        
         <div class="section">
           <div class="logod">
             <a href="https://tiko.energy/">
@@ -198,7 +212,6 @@
                 June 2022 - present
               </aside>
               <a href="https://tiko.energy/">
-
                 <h3 class="company">
                   Tiko Energy Solutions - Consultant SE
                 </h3>
@@ -206,6 +219,14 @@
               <p>
                 Implemented core components of our Virtual Power Plant, as well as our
                 next generation of smart home controllers.
+              </p>
+              <p>
+                Our VPP controlled hundreds of thousands of devices avross France, with
+                which we stabilized the energy grid on behalf of the government, by
+                tweaking the consumption, rather than the production, of electricity.
+              </p>
+              <p>
+                This really was cutting-edge stuff, as far as the energy sector is concerned.
               </p>
               <p>
                 <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>,
@@ -226,13 +247,22 @@
                 May 2021 - June 2022
               </aside>
               <a href="https://symmetryinvestments.com/">
-
                 <h3 class="company">
                   Symmetry Investments - Consultant SE
                 </h3>
               </a>
               <p>
-                Language implementer. Wrote a tail call elimination optimization pass, which removed recursion limits.
+                Working on the compiler for an internal programming language called SIL.<br>
+                Wrote a tail call elimination pass, which removed recursion limits.
+              </p>
+              <p>
+                Implemented a declarative spreadsheet-like language, in the language whose compiler
+                I was working on above. Instead of working spacially, with cells, this declarative
+                language used structured data. The visual layout, and data access patterns were
+                tree-shaped, instead of laid out on a grid, and data could be accessed via semantic
+                labels, for example <code>traders.owen.books.2025.gains</code>.<br>
+                This was an order of magnitude more safe and
+                pleasant than spreadsheets.
               </p>
               <p>
                 <a href="https://dlang.org/"><i class="devicon-dlang"></i> Dlang</a>
@@ -250,43 +280,32 @@
             <div>
               <div class="section">
                 <aside class="year">
-                  May 2020 - April 2021
-                </aside>
-                <a href="https://www.hubspot.com/">
-
-                  <h3 class="company">
-                    HubSpot - Senior Software Engineer
-                  </h3>
-                </a>
-                <p>
-                  Implemented DSLs to describes and execute data aggregation, transformation, diffing, and syncing.
-                </p>
-                <p>
-                  <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>,
-                  <a href="https://nixos.org/nix/"><i class="devicon-nix-plain"></i> Nix</a>,
-                  <a href="https://kubernetes.io/"><i class="devicon-k8s-plain"></i> k8s</i></a>,
-                  <a href="https://www.docker.com/"><i class="devicon-docker-plain"></i> docker</a>,
-                  <br><a href="https://www.scylladb.com/"><i class="devicon-scylla"></i> scylla</a>,
-                  <a href="https://redis.io/"><i class="devicon-redis-plain"></i> redis</a>
-                </p>
-              </div>
-              <div class="section" style="margin-bottom: 0">
-                <aside class="year">
+                  May 2020 - April 2021<br>
                   May 2018 - December 2019
                 </aside>
                 <a href="https://www.hubspot.com/">
-
                   <h3 class="company">
+                    HubSpot - Senior Software Engineer<br>
                     HubSpot - Fullstack Software Engineer
                   </h3>
                 </a>
                 <p>
-                  Led greenfield projects used by millions of people.
+                  Implemented DSLs to describes and execute data aggregation, transformation, diffing, and syncing, in
+                  the best language for writing such DSLs, <a href="https://www.haskell.org/">Haskell</a>.
                 </p>
                 <p>
+                  Led the development of a new HubSpot product offering, the Advocacy hub.
+                </p>
+                <p>
+                  <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>,
+                  <a href="https://nixos.org/nix/"><i class="devicon-nix-plain"></i> Nix</a>,
+                  <a href="https://kubernetes.io/"><i class="devicon-k8s-plain"></i> k8s</a>,
+                  <a href="https://www.docker.com/"><i class="devicon-docker-plain"></i> docker</a>,
+                  <a href="https://www.scylladb.com/"><i class="devicon-scylla"></i> scylla</a>,
+                  <a href="https://redis.io/"><i class="devicon-redis-plain"></i> redis</a>
                   <a href="https://reactjs.org/"><i class="devicon-react-original"></i> React.js</a>,
                   <a href="https://redux.js.org/"><i class="devicon-redux-plain"></i> Redux</a>,
-                  <a href="https://ramdajs.com/"><i class="devicon-ramda-plain"></i> Ramda</a>,<br>
+                  <a href="https://ramdajs.com/"><i class="devicon-ramda-plain"></i> Ramda</a>,
                   <a href="https://www.java.com/en/download/"><i class="devicon-java-plain"></i> Java</a>,
                   <a href="https://www.mysql.com/"><i class="devicon-mysql-plain"></i> MySQL</a>
                 </p>
@@ -298,7 +317,7 @@
           <div class="logod">
             <a href="https://obsidian.systems/">
               <div class="logo">
-                <img src="./obsidian.png" alt="Obsidian Systems LLC logo"/>
+                <img src="./obsidian.svg" alt="Obsidian Systems LLC logo"/>
               </div>
             </a>
             <div>
@@ -306,13 +325,13 @@
                 December 2019 - April 2020
               </aside>
               <a href="https://obsidian.systems/">
-
                 <h3 class="company">
                   Obsidian Systems LLC - Consultant SE
                 </h3>
               </a>
               <p>
-                Developed Haskell web frameworks with functional reactive programming, typechecked from database to frontend.
+                Developed Haskell web frameworks and state management systems, based on Functional Reactive Programming principles, typechecked from database to frontend.
+                The power and weirdness of this paradigm can be experienced, in the <a href="https://reflex-frp.org/tutorial#try-reflex-frp">project tutorial</a>.
               </p>
               <p>
                 <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>,
@@ -323,719 +342,263 @@
             </div>
           </div>
         </div>
-        <!--
-          <ul class="section">
-            <aside class="year">
-              Summers of 2017 and 2016 respectively
-            </aside>
-            <li>
-              <a href="https://www.arista.com/en/">
-                Arista Networks</a> - Linux Kernel Engineer (intern)
-            </li>
-            <li>
-              <a href="https://www.workday.com/">
-                Workday</a> - Scala Software Engineer (intern)
-            </li>
-          </ul>
-          -->
-        <!--
-          <div class="section">
-
-            <div class="logod">
-              <a href="https://www.arista.com/en/">
-                <div class="logo">
-                  <img src="./arista.svg" alt="Arista Networks logo"/>
-                </div>
-              </a>
-
-              <div>
-                <aside class="year">
-                  Internship - Summer of 2017
-                </aside>
-                <a href="https://www.arista.com/en/">
-
-                  <h3 class="company">
-                    Arista Networks - Linux Kernel Engineer
-                  </h3>
-                </a>
-
-                <p>
-                  Wrote linux kernel modules to take advantage of DMA hardware in network switches.
-                </p>
-
-                <p>
-                  <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>,
-                  <a href="https://www.python.org/"><i class="devicon-python-plain"></<i class="devicon-cordova"></i> Python</a>
-                </p>
-
-              </div>
-            </div>
-          </div>
-          -->
-        <!--
-          <ul class="section">
-            <aside class="year">
-              Internship - Summer of 2016
-            </aside>
-            <li>
-              <a href="https://www.workday.com/">
-                Workday</a> - Scala Software Engineer
-            </li>
-          </ul>
-          -->
-        <!--
-          <div class="section">
-
-            <div class="logod">
-              <a href="https://www.workday.com/">
-                <div class="logo">
-                  <img src="./workday.svg" alt="Workday Logo"/>
-                </div>
-              </a>
-
-              <div>
-                <aside class="year">
-                    Internship - Summer of 2016
-                </aside>
-                <a href="https://www.workday.com/">
-
-                  <h3 class="company">
-                    Workday - Software Engineer
-                  </h3>
-                </a>
-
-                <p>
-                Wrote a cross-platform app that used wifi network signal strengths to
-                triangulate a user's location in the office.
-                </p>
-
-                <p>
-                  <a href="https://www.scala-lang.org/"><i class="devicon-scala-plain"></i> Scala</a>,
-                  <a href="https://cordova.apache.org/"><i class="devicon-cordova"></i> Cordova</a>,
-                  <a href="https://ionicframework.com/"><i class="devicon-ionic-original"></i>Ionic</a>
-
-                </p>
-
-              </div>
-            </div>
-          </div>
-          -->
-        <!--
-          <div class="section">
-
-            <div class="logod">
-              <a href="https://betterexaminations.ie/">
-                <div class="logo">
-                  <img src="./workday.svg" alt="Workday Logo"/>
-                </div>
-              </a>
-
-              <div>
-                <aside class="year">
-                  May 2016 - Sept 2016
-                </aside>
-                <a href="https://betterexaminations.ie/">
-
-                  <h3 class="company">
-                    BetterExaminations - Software Developer
-                  </h3>
-                </a>
-
-                <p>
-                Wrote a cross-platform app that used wifi network signal strengths to
-                triangulate a user's location in the office.
-                </p>
-
-                <p>
-
-                <a href="https://www.scala-lang.org/">Scala</a>, <a href="https://cordova.apache.org/">Cordova</a>, <a href="https://ionicframework.com/">Ionic</a>
-
-                </p>
-
-              </div>
-            </div>
-          </div>
-          -->
-        <!--
-          <div class="section bullets">
-
-            <div><h3>
-              &#8226; <a href="https://betterexaminations.ie/">BetterExaminations.ie</a>
-              - Software Developer
-            </h3></div>
-
-            <div><h3>
-              &#8226; <a href="https://www.workday.com/">Workday</a>
-              - Software Engineering Intern
-            </h3></div>
-          </div>
-          -->
-      </div>
-
-      <h2>Open Source Contributions</h2>
-      <div>
-        <div class="section">
-          <ul>
-            <li>
-              <a href="https://github.com/tree-sitter/tree-sitter-haskell/pull/54">Sped up tree-sitter-haskell 45x.</a>
-            </li>
-            <li>
-              <a href="https://github.com/bos/math-functions/pull/64">Generalize compensated summation</a> algorithms to work over the RealFloat typeclass.
-            </li>
-            <li>
-              <a href="https://github.com/kak-lsp/kak-lsp/pull/353">Response Bucketing</a> Added the ability for language server requests to be executed atomically
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="section">
-        See <a href="https://github.com/search?q=is%3Apr+author%3A414owen">all my public PRs</a>
-      </div>
-
-      <h2>Popular(ish) blog posts</h2>
-      <div>
-        <div class="section info">
-          <ul>
-            <li>
-              <a href="https://owen.cafe/posts/six-times-faster-than-c/">
-              {n} times faster than C</a>.
-              This made it to the front page of
-              <span class="devicon-hackernews" title="Hacker News"></span> Hacker News
-              for a day or so  (<a href="https://news.ycombinator.com/item?id=36618344">link</a>).
-            </li>
-            <li>
-              <a href="https://owen.cafe/posts/tree-sitter-haskell-perf/">
-              Speeding up tree-sitter-haskell 50x</a>.
-              This was featured on Haskell Weekly <a href="https://haskellweekly.news/issue/380.html">issue 380</a>,
-              and got quite a lot of attention <a href="https://lobste.rs/s/mktvs4/speeding_up_tree_sitter_haskell_50x">on lobste.rs</a>.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--
-        <div class="section">
-          <div class="logod">
-            <a href="https://github.com/bos/math-functions">
-              <div class="logo">
-                <img src="./haskell.svg" alt="Haskell Logo"/>
-              </div>
-            </a>
-
-            <div>
-              <a href="https://github.com/bos/math-functions">
-
-                <h3>
-                  math-functions
-                </h3>
-              </a>
-
-              <p>
-                <a href="https://github.com/bos/math-functions/pull/64">Generalize compensated summation</a> algorithms (Kahan, Kahan-Babuška, Kahan-Babuška-Neumaier) to work over the RealFloat typeclass, instead of just over Doubles.
-              </p>
-
-              <p>
-                <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>
-              </p>
-
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div class="section">
-        <div class="logod">
-          <a href="https://github.com/kak-lsp/kak-lsp">
-            <div class="logo">
-              <img src="./kakoune.svg" alt="Kakoune Logo"/>
-            </div>
-          </a>
-
-          <div>
-            <a href="https://github.com/kak-lsp/kak-lsp">
-
-              <h3>
-                Kakoune Language Server Protocol Client
-              </h3>
-            </a>
-
-            <p>
-              <ul>
-                <li>
-                  <a href="https://github.com/kak-lsp/kak-lsp/pull/353">Response Bucketing</a>
-                  <div>
-                    Added the ability for language server requests to be executed atomically
-                  </div>
-                </li>
-                <li>
-                  <a href="https://github.com/kak-lsp/kak-lsp/pull/347">Selection Formatting</a>
-                  <div>
-                    Added the ability for a user to format all current selections
-                  </div>
-                </li>
-              </ul>
-            </p>
-
-            <p>
-              <a href="https://www.rust-lang.org/"><i class="devicon-rust-plain"></i> Rust</a>
-            </p>
-
-          </div>
-        </div>
-        </div>
-
-        -->
-
-      <h2>Skills</h2>
-      <div class="skills">
-        <div></div>
+        <h2>Personal work</h2>
         <div>
-          <aside style="float:left">&#9475; Beginner</aside>
-          <aside style="float:right">Expert &#9475;</aside>
-        </div>
-        <!--
-          <div class="name">
-            <a href="https://nixos.org/nix/"><i class="devicon-nix-plain"></i> Nix</a>
-          </div>
-          <div class="rating">
-            <div class="bar"></div>
-            <div class="dot">
-              <div style="left: 80%"></div>
-            </div>
-          </div>
-          -->
-        <div class="name">
-          <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>,
-        </div>
-        <div class="rating">
-          <div class="bar"></div>
-          <div class="dot">
-            <div style="left: 97%"></div>
-          </div>
-        </div>
-        <div class="name">
-          <a href="https://nixos.org/"><i class="devicon-nix-plain"></i> Nix</a>,
-        </div>
-        <div class="rating">
-          <div class="bar"></div>
-          <div class="dot">
-            <div style="left: 97%"></div>
-          </div>
-        </div>
-        <!--
-          <div class="name">
-            <a href="https://reflex-frp.org/">Reflex-FRP</a>
-          </div>
-          <div class="rating">
-            <div class="bar"></div>
-            <div class="dot">
-              <div style="left: 80%"></div>
-            </div>
-          </div>
-          -->
-        <div class="name">
-          <a href="https://rust-lang.org/"><i class="devicon-rust-plain"></i> Rust</a>
-        </div>
-        <div class="rating">
-          <div class="bar"></div>
-          <div class="dot">
-            <div style="left: 97%"></div>
-          </div>
-        </div>
-        <div class="name">
-          <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>
-        </div>
-        <div class="rating">
-          <div class="bar"></div>
-          <div class="dot">
-            <div style="left: 93%"></div>
-          </div>
-        </div>
-        <!--
-          <div class="name">
-            <a href="https://reactjs.org/">React / JS</a>
-          </div>
-          <div class="rating">
-            <div class="bar"></div>
-            <div class="dot">
-              <div style="left: 90%"></div>
-            </div>
-          </div>
-          -->
-        <!--
-          <div class="name">
-            <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>
-          </div>
-          <div class="rating">
-            <div class="bar"></div>
-            <div class="dot">
-              <div style="left: 85%"></div>
-            </div>
-          </div>
-          -->
-        <!--
-          <div class="name"
-            <a href="https://www.python.org/">Python</a>
-          </div>
-          <div class="rating">
-            <div class="bar"></div>
-            <div class="dot">
-              <div style="left: 80%"></div>
-            </div>
-          </div>
-          -->
-      </div>
-      <p>
-        <!-- <a href="https://www.rust-lang.org/">Rust</a>, -->
-        <!-- <a href="https://nixos.org/nix/"><i class="devicon-nix-plain"></i> Nix</a> -->
-        <a href="https://reflex-frp.org/"><i class="devicon-reflex"></i> Reflex-FRP</a>,
-        <!-- <a href="https://reactjs.org/"><i class="devicon-react-original"></i> React</a>, -->
-        <!-- <a href="https://redux.js.org/"><i class="devicon-redux-plain"></i> Redux</a>, -->
-        <!-- <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>, -->
-        <a href="https://git-scm.com/"><i class="devicon-git-plain"></i> Git</a>
-      </p>
-      <!--
-        <p>
-        <a href="https://reflex-frp.org/">Reflex-FRP</a>,
-        <a href="https://reactjs.org/">React</a>,
-        <a href="https://redux.js.org/">Redux</a>,
-        <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>,
-        <a href="https://www.python.org/">Python</a>,
-        <a href="https://git-scm.com/">Git</a>
-        </p>
-        -->
-
-      <h2>Education</h2>
-      <div>
-        <div class="section">
-          <div class="logod">
-            <a href="https://www.tcd.ie/">
-              <div class="logo">
-                <img src="./trinity.svg" alt="Trinity College Dublin logo"/>
-              </div>
-            </a>
-            <div>
-              <a href="https://www.tcd.ie/">
-
-                <h3>Trinity College Dublin</h3>
-              </a>
-              <p>
-                Bachelor's in Computer Science.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--
           <div class="section">
-            <div class="logod">
-              <div class="logo">
-                <img src="./globe.svg" alt="Internet"/>
-              </div>
-              <div>
-
-                <h3>Online Courses</h3>
-                <div>
-                  <div class="section info">
-                    <aside class="year">4 weeks each</aside>
-                    <ul>
-                      <li>
-                        <a href="https://www.coursera.org/learn/wharton-quantitative-modeling">
-                          Fundamentals of Quantitative Modelling
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.coursera.org/learn/basic-modeling">
-                          Basic Modelling for Discrete Optimization
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
-        <div class="section">
-          <div class="logod">
-            <div class="logo">
-              <img src="./category-theory.svg" alt="Category theory"/>
-            </div>
-            <div>
-
-              <h3>MGS 2024</h3>
-              <div>
-                <div class="section info">
-                  One week intensive course on Type Theory, Category Theory, and Proof Theory.
-                  Attended purely for fun.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h2>
-        Projects
-      </h2>
-      <div>
-        <!--
-          <div class="section">
-            <div class="logod">
-              <div class="logo">
-                <img src="./graph.svg" alt="Haskell Instrument Predictor"/>
-              </div>
-              <div>
-
-                  <h3>
-                    Haskell Instrument Predictor
-                  </h3>
-
-                <p>
-                  Haskell Instrument Predictor is a financial modelling system using regression trees. It's not public, but I'm happy to fire up a demo.
-                </p>
-
-                <p>
-                  <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i>
-                   Haskell</a>, <a href="https://nixos.org/nix/"><i class="devicon-nix-plain"></i> Nix</a>
-                </p>
-
-              </div>
-            </div>
-          </div>
-          -->
-        <div class="section">
-          <div class="logod">
-            <a href="https://github.com/414owen/piq">
-              <div class="logo">
-                <img src="./piq.svg" alt="Piq logo" style="image-rendering:pixelated"/>
-              </div>
-            </a>
-            <div>
-              <a href="https://github.com/414owen/piq">
-
-                <h3>
-                  The Piq Programming Language
-                </h3>
-              </a>
-              <p>
-                Piq is a statically-typed, type-inferred, compiled programming language, written in C99.
-              </p>
-              <p>
-                <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="logod">
-            <a href="https://github.com/414owen/simfin">
-              <div class="logo">
-                <img src="https://owen.cafe/img/simfin.svg" alt="SimFin logo" />
-              </div>
-            </a>
-            <div>
-              <a href="https://github.com/414owen/simfin">
-
-                <h3>
-                  SimFin financial data client
-                </h3>
-              </a>
-              <p>
-                Haskell client for the SimFin financial data API. Includes accurate
-                haskell types for all free and paid endpoints.
-              </p>
-              <p>
-                <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="logod">
-            <a href="https://github.com/414owen/Phage">
-              <div class="logo">
-                <img src="https://owen.cafe/img/phage-anim.svg" alt="Phage logo" />
-              </div>
-            </a>
-            <div>
-              <a href="https://github.com/414owen/Phage">
-
-                <h3>
-                  The Phage Programming Language
-                </h3>
-              </a>
-              <p>
-                A functional, homoiconic, expressive, metaprogrammable programming language.
-              </p>
-              <p>
-                <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="logod">
-            <a href="https://lambda.how/">
-              <div class="logo">
-                <img src="https://owen.cafe/img/lambda.svg" alt="Lambda REPL logo" />
-              </div>
-            </a>
-            <div>
-              <a href="https://lambda.how/">
-
-                <h3>
-                  Try Lambda
-                </h3>
-              </a>
-              <p>
-                Lambda calculus step-by-step simplifier REPL.
-              </p>
-              <p>
-                <a href="https://www.gnu.org/software/bison/"><i class="devicon-gnu-plain"></i>
-                Bison</a>,
-                <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>,
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="devicon-javascript-plain"></i> JS</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="logod">
-            <a href="https://select.pink/">
-              <div class="logo">
-                <svg viewBox="0 0 10 10" alt="Lambda REPL logo">
-                  <rect x="2" y="2" width="6" height="6" fill="#f8a"/>
-                </svg>
-              </div>
-            </a>
-            <div>
-              <a href="https://select.pink/">
-
-                <h3>
-                  Select.Pink
-                </h3>
-              </a>
-              <p>
-                A game where you use CSS selectors to make progress.
-              </p>
-              <p>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><i class="devicon-html5-plain"></i> HTML</a>,
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><i class="devicon-css3-plain"></i> CSS</a>,
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="devicon-javascript-plain"></i> JS</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="logod">
-            <div class="logo">
-              <img src="./glider.svg" alt="Conway's Game Of Life GBA"/>
-            </div>
-            <div>
-              <a href="https://github.com/414owen/game-of-life-gba/">
-
-                <h3>
-                  Conway's Game of Life GBA
-                </h3>
-              </a>
-              <p>
-                An implementation of Conway's Game of Life for Gameboy
-                Advance, implemented in C on bare-metal.
-              </p>
-              <p>
-                <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          See more projects on
-          <a href="https://github.com/414owen/">Github</a>
-          or
-          <a href="https://owen.cafe/projects/">My Website</a>
-        </div>
-      </div>
-      <!--
-
-        <h2>
-          Competitions
-        </h2>
-
-        <div class="logod">
-          <div class="logo">
-            <img src="./icpc.svg" alt="ICPC logo" />
-          </div>
-
-          <ul>
-            <li>
-              <a href="http://2016.nwerc.eu/">NWERC 2016</a>
-              - 1st Irish team
-            </li>
-
-            <li>
-              <a href="http://ukiepc.info/2016/">UKIEPC</a>
-              - 1st Irish team
-            </li>
-
-            <li>
-              Arista Hack-A-Switch (internal) - won two out of five categories
-            </li>
-
-            <li>
-              Bloomberg Codecon @TCD 2017 - 2nd
-            </li>
-
-            <li>
-              <a href="https://zerodays.ie">ZeroDays security 2017 / 2018 / 2019</a> - 1st
-            </li>
-
-            <li>
-              <a href="https://hacktrinity.me/">HackTrinity 2018</a> - 2nd
-            </li>
-
-            <li>
-              <a href="https://codingcompetitions.withgoogle.com/hashcode/archive/2019">Google Hashcode 2019</a> - competed <a href="https://github.com/414owen/hashcode-2019">in Haskell</a>
-            </li>
-          </ul>
-        </div>
-        -->
-      <!--
-
-        <h2>Favourite Tech Books</h2>
-        <div>
-          <div class="section info">
             <ul>
+
               <li>
-                <a href="https://haskellbook.com/">
-                  Haskell Programming (from first principles)
-                </a>
+                <a href="https://owen.cafe/posts/six-times-faster-than-c/">
+                [Blog] {n} times faster than C</a> - featured on: <a href="https://news.ycombinator.com/item?id=36618344">Hacker News</a>, <a href="https://www.reddit.com/r/rust/comments/14yvlc9/n_times_faster_than_c_where_n_128/">r/rust</a>, <a href="https://lobste.rs/s/mfxxce/quantifying_pass_by_value_overhead">lobste.rs</a>
               </li>
               <li>
-                <a href="http://learnyouahaskell.com/">
-                  Learn you a Haskell for Great Good
-                </a>
+                <a href="https://owen.cafe/posts/tree-sitter-haskell-perf/">
+                [Blog] Speeding up tree-sitter-haskell 50x</a>
+                - featured on: <a href="https://haskellweekly.news/issue/380.html">Haskell Weekly</a>,
+                <a href="https://lobste.rs/s/mktvs4/speeding_up_tree_sitter_haskell_50x">lobste.rs</a>
               </li>
               <li>
-                <a href="https://www.manning.com/books/type-driven-development-with-idris">
-                  Type-Driven Development with Idris
-                </a>
+                <a href="https://owen.cafe/posts/struct-sizes/">
+                [Blog] Quantifying pass-by-value overhead</a> - featured on: <a href="https://news.ycombinator.com/item?id=45728170">Hacker News</a>, <a href="https://lobste.rs/s/7efvw7/6_33_times_faster_than_c_part_one">lobste.rs</a>
+              </li>
+              <br>
+
+              <li>
+                <a href="https://github.com/tree-sitter/tree-sitter-haskell/pull/54">[PR] Sped up tree-sitter-haskell 45x</a>
               </li>
               <li>
-                <a href="https://doc.rust-lang.org/book/">
-                  The Rust Programming Language
-                </a>
+                <a href="https://github.com/bos/math-functions/pull/64">[PR] Generalize compensated summation</a> algorithms to work over the RealFloat typeclass
               </li>
+              <li>
+                <a href="https://github.com/kak-lsp/kak-lsp/pull/353">[PR] Response Bucketing</a> Added the ability for language server requests to be executed atomically
+              </li>
+
             </ul>
           </div>
         </div>
-        -->
+        <div class="section">
+          See <a href="https://github.com/search?q=is%3Apr+author%3A414owen">all my public PRs</a>
+        </div>
+      </section>
+      <section class="sheet padding-10mm">
+
+        <h2>
+          Projects
+        </h2>
+        <div>
+          <div class="section">
+            <div class="logod">
+              <a href="https://github.com/414owen/piq">
+                <div class="logo">
+                  <img src="./piq.svg" alt="Piq logo" style="image-rendering:pixelated"/>
+                </div>
+              </a>
+              <div>
+                <a href="https://github.com/414owen/piq">
+                  <h3>
+                    The Piq Programming Language
+                  </h3>
+                </a>
+                <p>
+                  Piq is a statically-typed, type-inferred, compiled programming language, written in C99.
+                </p>
+                <p>
+                  <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="logod">
+              <a href="https://github.com/414owen/smolgraph">
+                <div class="logo">
+                  <img src="./smolgraph.svg" alt="smolgraph logo"/>
+                </div>
+              </a>
+              <div>
+                <a href="https://github.com/414owen/smolgraph">
+                  <h3>
+                    smolgraph
+                  </h3>
+                </a>
+                <p>
+                  An extremely small (&lt;4k), but featureful, multi-line-graph library.
+                </p>
+                <p>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="devicon-javascript-plain"></i> JS</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="logod">
+              <a href="https://github.com/414owen/simfin">
+                <div class="logo">
+                  <img src="https://owen.cafe/img/simfin.svg" alt="SimFin logo" />
+                </div>
+              </a>
+              <div>
+                <a href="https://github.com/414owen/simfin">
+                  <h3>
+                    SimFin financial data client
+                  </h3>
+                </a>
+                <p>
+                  Haskell client for the SimFin financial data API. Includes accurate
+                  haskell types for all free and paid endpoints.
+                </p>
+                <p>
+                  <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="logod">
+              <a href="https://github.com/414owen/Phage">
+                <div class="logo">
+                  <img src="https://owen.cafe/img/phage-anim.svg" alt="Phage logo" />
+                </div>
+              </a>
+              <div>
+                <a href="https://github.com/414owen/Phage">
+                  <h3>
+                    The Phage Programming Language
+                  </h3>
+                </a>
+                <p>
+                  A functional, homoiconic, expressive, metaprogrammable programming language.
+                </p>
+                <p>
+                  <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="logod">
+              <a href="https://lambda.how/">
+                <div class="logo">
+                  <img src="https://owen.cafe/img/lambda.svg" alt="Lambda REPL logo" />
+                </div>
+              </a>
+              <div>
+                <a href="https://lambda.how/">
+                  <h3>
+                    Try Lambda
+                  </h3>
+                </a>
+                <p>
+                  Lambda calculus step-by-step simplifier REPL.
+                </p>
+                <p>
+                  <a href="https://www.gnu.org/software/bison/"><i class="devicon-gnu-plain"></i>
+                  Bison</a>,
+                  <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>,
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="devicon-javascript-plain"></i> JS</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="logod">
+              <a href="https://select.pink/">
+                <div class="logo">
+                  <svg viewBox="0 0 10 10">
+                    <rect x="2" y="2" width="6" height="6" fill="#f8a"/>
+                  </svg>
+                </div>
+              </a>
+              <div>
+                <a href="https://select.pink/">
+                  <h3>
+                    Select.Pink
+                  </h3>
+                </a>
+                <p>
+                  A pedagogical game where you use CSS selectors to make progress.
+                </p>
+                <p>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><i class="devicon-html5-plain"></i> HTML</a>,
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><i class="devicon-css3-plain"></i> CSS</a>,
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="devicon-javascript-plain"></i> JS</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="logod">
+              <div class="logo">
+                <img src="./glider.svg" alt="Conway's Game Of Life GBA"/>
+              </div>
+              <div>
+                <a href="https://github.com/414owen/game-of-life-gba/">
+                  <h3>
+                    Conway's Game of Life GBA
+                  </h3>
+                </a>
+                <p>
+                  An implementation of Conway's Game of Life for Gameboy
+                  Advance, implemented in C on bare-metal.
+                </p>
+                <p>
+                  <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="logod">
+              <a href="https://github.com/414owen/pandoc-builder-monadic">
+                <div class="logo">
+                  <img src="./pandoc-monadic.svg" alt="pandoc-builder-monadic logo"/>
+                </div>
+              </a>
+              <div>
+                <a href="https://github.com/414owen/pandoc-builder-monadic">
+                  <h3>
+                    pandoc-builder-monadic
+                  </h3>
+                </a>
+                <p>
+                  A DSL for creating pandoc ASTs with do-notation
+                </p>
+                <p>
+                  <a href="https://www.haskell.org/"><i class="devicon-haskell-plain"></i> Haskell</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="logod">
+              <a href="https://github.com/414owen/unansi">
+                <div class="logo">
+                  <img src="./unansi.svg" alt="unansi logo"/>
+                </div>
+              </a>
+              <div>
+                <a href="https://github.com/414owen/unansi">
+                  <h3>
+                    unansi
+                  </h3>
+                </a>
+                <p>
+                  Strip out ANSI control sequences
+                </p>
+                <p>
+                  <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i> C</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            See more projects on
+            <a href="https://github.com/414owen/">Github</a>
+            or
+            <a href="https://owen.cafe/projects/">my website</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <!--
-      <footer>
-        <a href="mailto:owen@owen.cafe">&#128231;</a>
-        <a href="https://owen.cafe/">&#127760;</a>
-        <a href="mailto:owen@owen.cafe">&#128231;</a>
-      </footer>
-      -->
-  </section>
   </body>
 </html>

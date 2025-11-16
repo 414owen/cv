@@ -1,5 +1,55 @@
+@page { margin: 0 }
+body { margin: 0 }
+.sheet {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+/** Paper sizes **/
+body.A3               .sheet { width: 297mm; height: 419mm }
+body.A3.landscape     .sheet { width: 420mm; height: 296mm }
+body.A4               .sheet { width: 210mm; height: 296mm }
+body.A4.landscape     .sheet { width: 297mm; height: 209mm }
+body.A5               .sheet { width: 148mm; height: 209mm }
+body.A5.landscape     .sheet { width: 210mm; height: 147mm }
+body.letter           .sheet { width: 216mm; height: 279mm }
+body.letter.landscape .sheet { width: 280mm; height: 215mm }
+body.legal            .sheet { width: 216mm; height: 356mm }
+body.legal.landscape  .sheet { width: 357mm; height: 215mm }
+
+/** For screen preview **/
+@media screen {
+  body { background: #e0e0e0 }
+  .sheet {
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    margin: 5mm auto;
+  }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+           body.A3.landscape { width: 420mm }
+  body.A3, body.A4.landscape { width: 297mm }
+  body.A4, body.A5.landscape { width: 210mm }
+  body.A5                    { width: 148mm }
+  body.letter, body.legal    { width: 216mm }
+  body.letter.landscape      { width: 280mm }
+  body.legal.landscape       { width: 357mm }
+}
+
+.sheet {
+  background: #fff;
+  background-image: repeating-linear-gradient(-45deg, #eef, #eee 1px, transparent 1px, transparent 12px);
+  padding: 13mm;
+}
+
 code {
-  font-size: 1em;
+  font-size: inherit;
+  font-family: inherit;
   color: #a22;
 }
 
@@ -18,14 +68,12 @@ code {
   --l2: #ddd;
 }
 
-#personal-info {
-  display: grid;
-  grid-template-columns: auto 100fr;
-  grid-column-gap: var(--m2);
+#personal-info > .split {
+  grid-template-columns: 1fr 33fr 1fr 33fr 1fr 33fr;
 }
 
-#personal-info > span {
-  text-align: center;
+#personal-info > .split > .pane:nth-child(2n) {
+  padding-left: calc(var(--m) / 2);
 }
 
 h2:first-child {
@@ -46,7 +94,7 @@ h2:first-child {
 }
 
 h1 {
-  margin: calc(var(--m) * 2);
+  margin-bottom: calc(var(--m));
   padding: 0;
   font-size: var(--heading-text-size);
   line-height: var(--heading-text-size);
@@ -57,15 +105,11 @@ h1 {
 
 .split {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
-.pane {
+.pane:not(:first-child) {
   padding-left: var(--m);
-}
-
-main {
-  padding: 0 var(--m);
 }
 
 h2 {
@@ -82,16 +126,6 @@ h3 {
 h3, h4 {
   margin-bottom: 0;
   padding: 0;
-}
-
-.skills {
-  display: grid;
-  width: 100%;
-  grid-template-columns: auto 100fr;
-  align-items: center;
-  grid-row-gap: 1mm;
-  grid-column-gap: 4mm;
-  text-align: right;
 }
 
 .rating .bar {
@@ -126,7 +160,7 @@ h3, h4 {
 
 .logod {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .logo {
@@ -134,12 +168,7 @@ h3, h4 {
   --s: 12mm;
   width: var(--s);
   height: var(--s);
-  margin: 0;
-  margin-right: var(--m);
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: middle;
+  margin: 4px var(--m) 0 0;
 }
 
 .logo > img, .logo > svg {
@@ -147,6 +176,10 @@ h3, h4 {
   max-height: var(--s);
 }
 
+.about {
+  margin-bottom: 3mm;
+}
+  
 p {
   margin-bottom: 0;
   margin-top: 3mm;
@@ -172,7 +205,7 @@ aside {
 }
 
 .year {
-  text-align: right;
+  float: right;
 }
 
 footer {
